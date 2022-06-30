@@ -119,7 +119,7 @@ REGD_NO	NAME	BRANCH
 1. Write down the SQL command which will show the Regd. No of Pradeep.
 2. Write down the SQL command which will show the Name and Branch column.
 3. Write a SQL command which will count the number of rows existing in STUDENT table.
-4. I want to add another column in the STUDENT table as ”address”. How can I do that?
+4. I want to add another column in the STUDENTS table as ”address”. How can I do that?
 
 
 -----------------------------------------------------------
@@ -131,6 +131,21 @@ insert into students  values (0003, 'Pradeep', 'EEE');
 insert into students  values (0004, 'Deepak', 'CIVIL');
 
 select * from students;
+
+-------------------------------------------------------------
+select * from takeo_db.students;
+
+# 1. Write down the SQL command which will show the Regd. No of Pradeep.
+select regd_no from students where name = 'Pradeep';
+
+#2. Write down the SQL command which will show the Name and Branch column.
+select name, branch from students;
+
+# 3. Write a SQL command which will count the number of rows existing in STUDENTS table.
+select count(*) from students;
+
+# 4. I want to add another column in the STUDENTS table as ”address”. How can I do that?
+alter table students ADD column address varchar(50);
 
 
 
