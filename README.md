@@ -105,9 +105,32 @@ mysql> SELECT * FROM employee;
 +-------------+------+---------+
 1 row in set (0.00 sec)
 
+===========================================================================================
+
+Students
+-----------------------
+REGD_NO	NAME	BRANCH
+0001	Ram	    CSE
+0002	Hari	MECH
+0003	Pradeep	EEE
+0004	Deepak	ETC
+-----------------------
+
+1. Write down the SQL command which will show the Regd. No of Pradeep.
+2. Write down the SQL command which will show the Name and Branch column.
+3. Write a SQL command which will count the number of rows existing in STUDENT table.
+4. I want to add another column in the STUDENT table as ”address”. How can I do that?
 
 
+-----------------------------------------------------------
+create table students (regd_no int, name varchar(25), branch varchar(5));
 
+insert into students (regd_no, name, branch) values (0001, 'Ram', 'CSE');
+insert into students  values (0002, 'Hari', 'MECH');
+insert into students  values (0003, 'Pradeep', 'EEE');
+insert into students  values (0004, 'Deepak', 'CIVIL');
+
+select * from students;
 
 
 
